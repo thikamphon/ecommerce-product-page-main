@@ -22,7 +22,6 @@ function openLightbox(index) {
 // Function to close the lightbox
 function closeLightbox() {
     lightbox.style.display = 'none';
-    //เพิ่มเข้ามา reset lightbox-content
     currentIndex = 0
     lightboxContent.src = thumbnails[currentIndex].querySelector('img').src;
     document.querySelectorAll('.thumbnail-lightbox img')[currentIndex].classList.remove("selected");
@@ -61,7 +60,6 @@ function nextImage() {
     console.log('click')
     currentIndex = (currentIndex + 1) % thumbnails.length;
     lightboxContent.src = thumbnails[currentIndex].querySelector('img').src;
-    // mainImage.src = lightboxContent.src;
     let lastImg = document.querySelectorAll(".selected");
     if (lastImg) {
         lastImg[1].classList.remove("selected");
@@ -97,7 +95,6 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 // Event listeners for lightbox navigation
-//ทำprev next index0 ใหม่
 prevBtn[1].addEventListener('click', prevImage);
 nextBtn[1].addEventListener('click', nextImage);
 nextBtn[0].addEventListener('click', next_mobile);
