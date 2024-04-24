@@ -5,7 +5,7 @@ The technical I use in this project is basic HTML CSS and JS only.
 # Overview
 ![enter image description here](overview/overview-computer.png)
 <p align="center">
-  <img src="https://github.com/thikamphon/ecommerce-product-page-main/main/overview/overview-mobie.png" alt="overview on mobile"/>
+  <img src="https://github.com/thikamphon/ecommerce-product-page-main/blob/main/overview/overview-mobile.png" alt="overview on mobile"/>
 </p>
 
 # Links
