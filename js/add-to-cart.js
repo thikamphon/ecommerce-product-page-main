@@ -8,7 +8,6 @@ items.forEach(item => {
     const addToCartBtn = item.querySelector('.add-to-cart');
 
     let quantity = 0;
-    let isCart = false;
 
     plusBtn.addEventListener('click', () => {
         quantity++;
