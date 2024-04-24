@@ -32,8 +32,8 @@ items.forEach(item => {
     const emptytxt = document.getElementById('emptytxt');
     const checkout_btn = document.querySelector('.checkout');
     const notificationcart = document.querySelector('.notification-cart');
-    const totalPrice = parseFloat(priceOfproduct.innerHTML * quantity).toFixed(2);
     addToCartBtn.addEventListener('click', () => {
+         const totalPrice = parseFloat(priceOfproduct.innerHTML * quantity).toFixed(2);
         if (quantity > 0) {
             emptytxt.classList.add('hidden');
             checkout_btn.classList.add('open')
