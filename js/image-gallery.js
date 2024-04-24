@@ -9,7 +9,6 @@ const nextBtn = document.querySelectorAll('.next-btn');
 const cartBtn = document.querySelectorAll('.cart-items');
 
 let currentIndex = 0;
-let isLightbox;
 var isthumbails = false;
 
 // Function to open the lightbox
@@ -106,9 +105,6 @@ mainImage.addEventListener('click', () => {
     if (isthumbails == true) {
         openLightbox(currentIndex);
     }
-    if (isthumbails == false) {
-        console.log('can not open')
-    }
 });
 
 // when window size screen >=430 can click mainImage and take action
@@ -116,13 +112,9 @@ window.onload = function () {
     var windowWidth = window.innerWidth;
     if (windowWidth <= 540) {
         isthumbails = false;
-        console.log('window Width < 430')
         lightbox.classList.add('hidden');
-        console.log(isthumbails)
     }
     else if (windowWidth >= 540) {
         isthumbails = true;
-        console.log('window Width > 430')
-        console.log(isthumbails)
     }
 }
